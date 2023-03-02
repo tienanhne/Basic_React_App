@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  max-width: 1240px;
+  margin: 0 auto;
 }
 
 .App-logo {
@@ -28,10 +29,161 @@
   color: #61dafb;
 }
 
+.frem {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url('../src/image/gifs.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.frem p {
+  position: absolute;
+  top: 3rem;
+  font-size: 7rem;
+  color: #00000063;
+}
+
+.frem h2 {
+  position: absolute;
+  bottom: 8rem;
+  font-size: 34px;
+}
+
+.frem h5 {
+  position: absolute;
+  bottom: 6rem;
+  color: #9c9c9c;
+}
+
+.frem a {
+  position: absolute;
+  bottom: 1rem;
+  background: linear-gradient(45deg, #ff0034, #ffbc00);
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 23px;
+  border-radius: 13px;
+}
+
+.inputbox {
+  position: relative;
+  width: 100%;
+}
+
+.bx {
+  position: absolute;
+  font-size: 20px;
+  top: 20px;
+}
+
+.label {
+  color: #ff0034;
+}
+
+.TimeData {
+  background-color: #282c34;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.clock {
+  width: 350px;
+  height: 180px;
+  background-color: #ff0034;
+  position: relative;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  text-shadow: #ffbc00;
+}
+
+.clock section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.clock section p {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.clock section small {
+  color: aqua;
+}
+
+
+/*todolist*/
+
+.containers {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(9, 119, 121);
+  background: linear-gradient(90deg, rgba(9, 119, 121, 1) 37%, rgba(166, 0, 255, 1) 71%);
+  height: 500px;
+  width: 350px;
+}
+.containers .handle{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+
+}
+.containers .handle input{
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+.containers .handle button{
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgba(0,255,136,1) 43%, rgba(9,119,121,1) 58%);
+}
+.containers .render{
+  position: absolute;
+  top: 20%;
+}
+.containers .render ul li{
+  width: 300px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: azure;
+}
+.containers .render ul li button{
+  border: none;
+  outline: none;
+  padding: 0 10px 0 10px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgba(0,255,217,1) 29%, rgba(236,236,236,1) 50%);
+
+
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
